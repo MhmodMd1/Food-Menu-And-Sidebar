@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+.title {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: normal;
+}
+.parent {
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+.parent .container {
+    width: 85%;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.parent .content {
+    width: 72%;
+}
+.parent .content .box {
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+.parent .content .box .text {
+    background-color: #F9F9F9;
+    padding: 20px;
+}
+.parent .box .text h2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: normal;
+}
+.parent .box .text .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.parent .box .text .icons i {
+    color: #E8272E;
+    margin-right: 5px;
+}
+.parent .box .text .icons .date {
+    margin-right: 20px;
+    position: relative;
+}
+.parent .box .text .icons .date::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 15px;
+    width: 1px;
+    background-color: #777;
+}
+.parent .box .text p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.parent .box .text  a {
+    text-decoration: none;
+    color: #E8272E;
+    margin-top: 15px;
+}
+.parent .content .pages {
+    margin: 50px 0 150px;
+    width: 100%;
+    text-align: center;
+}
+.parent .content .pages span {
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    color: #777;
+    transition: 0.3s;
+}
+.parent .content .pages span:hover,
+.parent .content .pages i:hover {
+    background-color: #E8272E;
+    color: white;
+    border-color: white;
+}
+.parent .content .pages i {
+    padding: 17px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    color: #777;
+    transition: 0.3s;
+}
+.parent .sidebar {
+    width: 27%;
+}
+.parent .sidebar .categories {
+    padding: 20px;
+}
+.parent .sidebar .categories input {
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 25px;
+    border: none;
+    border: 2px solid #CED4DA;
+}
+.parent .sidebar .categories h2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+.parent .sidebar .categories ul {
+    list-style: none;
+    width: 100%;
+}
+.parent .sidebar .categories ul li {
+    width: 100%;
+    margin-bottom: 10px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.parent .sidebar .categories ul li i {
+    margin-right: 10px;
+}
+.parent .sidebar .categories ul li span {
+    text-align: right;
+}
+.parent .sidebar .post {
+    padding: 20px;
+}
+.parent .sidebar .post .box {
+    display: flex;
+    margin-bottom: 15px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.parent .sidebar .post .box img {
+    border-radius: 15px;
+}
+.parent .sidebar .post .box .text {
+    margin-left: 10px;
+}
+.parent .sidebar .post h2 {
+    margin-bottom: 10px;
+}
+
+.parent .sidebar .post .box h2 {
+    font-size: 16px;
+}
+.parent .sidebar .offer {
+    padding: 20px;
+}
+.parent .sidebar .insta {
+    padding: 20px;
+}
+.parent .sidebar .insta h2 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px ;
+    padding-bottom: 10px;
+}
+.parent .sidebar .tags {
+    padding: 20px;
+}
+.parent .sidebar .tags h2 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px ;
+    padding-bottom: 10px;
+}
+.parent .sidebar .tags .tags-s {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.parent .sidebar .tags .tags-s a {
+    text-decoration: none;
+    color: black;
+    background-color: #F4F4F4;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.parent .footer {
+    width: 100%;
+    background-image: url(../image/food.jpg);
+    height: 100px;
+    background-size: cover;
+    position: relative;
+}
+.parent .footer::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+.parent .footer .card {
+    height: 100px;
+    transform: translate(-50% , -50%);
+    width: 70%;
+    background-color: #E8272E;
+    color: white;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    left: 50%;
+    padding: 30px;
+    border-radius: 15px;
+}
+.parent .footer .card .text {
+    width: 45%;
+}
+.parent .footer .card .text p {
+    font-size: 16px;
+    max-width: 400px;
+}
+.parent .footer .form {
+    width: 50%;
+}
+.parent .footer .form input {
+    width: 100%;
+    border: none;
+    background-color: #EA3D43;
+    color: white;
+    padding: 20px;
+    border-radius: 50px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid white;
+}
+.parent .footer .form input:focus {
+    outline: none;
+}
+.parent .footer .form input::placeholder {
+    color: white;
+}
+.parent .footer .form button {
+    position: absolute;
+    right: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: #E8272E;
+    background-color: white;
+    padding: 10px 30px ;
+    border-radius: 20px;
+    width: 150px;
+}
